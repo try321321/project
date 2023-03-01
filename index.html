@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trading Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/lightweight-charts@3.4.0/dist/lightweight-charts.standalone.production.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="header">Trading Dashboard</div>
+      <div class="new-orders">
+        <?php include 'new_orders.html'; ?>
+      </div>
+      <div class="chart-container" id="tv_chart_container"></div>
+      <div class="results">
+        <?php include 'results.html'; ?>
+      </div>
+      <div class="footer">&copy; 2023 Trading Dashboard</div>
+    </div>
+
+    <div class="container">
+      <div class="tv-chart-container"></div>
+      <div class="new-orders">
+        <h2>New Orders</h2>
+        <div class="vertical-panel">
+          <form id="chart-form">
+            <div class="search">
+              <label class="search-label" for="asset">Select an asset: </label>
+              <select class="search-dropdown" id="asset" name="asset">
+                <option value="BTCUSD">Bitcoin (BTC/USD)</option>
+                <option value="ETHUSD">Ethereum (ETH/USD)</option>
+                <option value="LTCUSD">Litecoin (LTC/USD)</option>
+                <option value="XRPUSD">Ripple (XRP/USD)</option>
+                <option value="BCHUSD">Bitcoin Cash (BCH/USD)</option>
+                <option value="EOSUSD">EOS (EOS/USD)</option>
+                <option value="XMRUSD">Monero (XMR/USD)</option>
+                <option value="DASHUSD">Dash (DASH/USD)</option>
+              </select>
+            </div>
+            <div class="input-row">
+              <input class="input-field" type="text" placeholder="Take Profit">
+              <input class="input-field" type="text" placeholder="Stop Loss">
+            </div>
+            <div class="leverage-row">
+              <label class="leverage-label" for="leverage">Leverage: </label>
+              <div class="leverage-slider-container">
+                <input class="leverage-slider" type="range" min="1" max="100" value="50" id="leverage">
+                <div class="leverage-slider-value">50x</div>
+              </div>
+            </div>
+            <div class="margin-amount-row">
+              <div class="margin-row">
+                <label class="margin-label" for="margin"></label>
+                <select class="margin-dropdown" id="margin">
+                  <option value="isolated">Isolated Margin</option>
+                  <option value="crossed">Crossed Margin</option>
+                </select>
+              </div>
+              <div class="amount-row">
+                <input class="input-field" type="text" placeholder="Amount">
+              </div>
+            </div>
+            <div class="price-row">
+              <label class="Quote-label" for="quote">Asset price:</label>
+              <div class="price" id="asset-price">$147.10</div>
+            </div>
+            <div class="balance-row">
+  <label class="Balance-label" for="balance">Balance:</label>
+  <div class="balance" id="balance"> $50,000.00</div>
+</div>
+<div class="exposition-row">
+  <label class="Exposition-label" for="exposition">Margin:</label>
+  <div class="exposition" id="exposition"></div>
+</div>
+<div class="order-row">
+  <button class="buy-button">Buy</button>
+  <button class="sell-button">Sell</button>
+</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/lightweight-charts@3.4.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+
+
+

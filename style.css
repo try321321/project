@@ -1,0 +1,266 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Grid container styles */
+.grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "new-orders chart"
+    "results footer";
+  height: 100vh;
+}
+
+/* Header styles */
+.header {
+  grid-area: header;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+/* New orders panel styles */
+.new-orders {
+  grid-area: new-orders;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Chart container styles */
+.chart-container {
+  grid-area: chart;
+  height: 100%;
+}
+
+/* Results panel styles */
+.results {
+  grid-area: results;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+  grid-area: footer;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Form element styles */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+select {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5px;
+  width: 49%;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* Input row styles */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Leverage row styles */
+.leverage-row {
+  margin-bottom: 5px;
+}
+
+.leverage-slider {
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.leverage-slider-value {
+  font-size: 1.2rem;
+}
+
+/* Buy and sell button styles */
+.buy-button {
+  background-color: #7FFF7F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 150px;
+}
+
+.sell-button {
+  background-color: #FF7F7F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.buy-button:hover,
+.sell-button:hover {
+  transform: scale(1.05);
+}
+
+.buy-button:active,
+.sell-button:active {
+  transform: scale(0.95);
+}
+
+/* Order row styles */
+.order-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+/* Balance row styles */
+.balance-row {
+  display:flex;
+  justify-content: left;
+  margin-top: 0rem;
+}
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main panel styles */
+.vertical-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Form element styles */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+select {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5px;
+  width: 49%;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* Input row styles */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Leverage row styles */
+.leverage-row {
+  margin-bottom: 5px;
+}
+
+.leverage-slider {
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.leverage-slider-value {
+  font-size: 1.2rem;
+}
+
+/* Buy and sell button styles */
+.buy-button {
+  background-color: #7FFF7F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 150px;
+}
+
+.sell-button {
+  background-color: #FF7F7F;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.buy-button:hover,
+.sell-button:hover {
+  transform: scale(1.05);
+}
+
+.buy-button:active,
+.sell-button:active {
+  transform: scale(0.95);
+}
+
+/* Order row styles */
+.order-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+/* Balance row styles */
+.balance-row {
+  display:flex;
+  justify-content: left;
+  margin-top: 0rem;
+}

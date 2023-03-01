@@ -1,0 +1,59 @@
+<div class="vertical-panel">
+  <div class="search">
+    <label class="search-label" for="search">Search Asset: </label>
+    <select class="search-dropdown" id="search">
+      <option value="">Select an asset</option>
+      <option value="asset1">Asset 1</option>
+      <option value="asset2">Asset 2</option>
+      <option value="asset3">Asset 3</option>
+      <option value="asset4">Asset 4</option>
+      <option value="asset5">Asset 5</option>
+      <option value="asset6">Asset 6</option>
+      <option value="asset7">Asset 7</option>
+      <option value="asset8">Asset 8</option>
+      <option value="asset9">Asset 9</option>
+      <option value="asset10">Asset 10</option>
+    </select>
+  </div>
+  <div class="input-row">
+    <input class="input-field" type="text" placeholder="Take Profit">
+    <input class="input-field" type="text" placeholder="Stop Loss">
+  </div>
+  <div class="leverage-row">
+    <label class="leverage-label" for="leverage">Leverage: </label>
+    <div class="leverage-slider-container">
+      <input class="leverage-slider" type="range" min="1" max="100" value="50" id="leverage">
+      <div class="leverage-slider-value">50x</div>
+    </div>
+  </div>
+  <div class="margin-amount-row">
+    <div class="margin-row">
+      <label class="margin-label" for="margin"></label>
+      <select class="margin-dropdown" id="margin">
+        <option value="isolated">Isolated Margin</option>
+        <option value="crossed">Crossed Margin</option>
+      </select>
+    </div>
+    <div class="amount-row">
+      <input class="input-field" type="text" placeholder="Amount">
+    </div>
+  </div>
+  <div class="price-row">
+    <label class="Quote-label" for="quote">Asset price:</label>
+    <div class="price">$147.10</div>
+  </div>
+  <div class="balance-row">
+    <label class="Balance-label" for="balance">Balance:</label>
+    <div class="balance"> $50,000.00</div>
+  </div>
+  <div class="exposition-row">
+    <label class="Exposition-label" for="exposition">Margin:</label>
+    <div class="exposition"></div>
+  </div>
+  <div class="order-row">
+    <button class="buy-button">Buy</button>
+    <button class="sell-button">Sell</button>
+  </div>
+</div>
+
+<script src="slider.js"></script>
